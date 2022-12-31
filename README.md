@@ -4,14 +4,15 @@ You may practice bit counting using this app.This software is intended for schoo
 
 ## Some screenshots of the app
 
-![bit-normal](https://user-images.githubusercontent.com/61284667/210055591-40851ed4-e1be-4aab-abe1-79cec959d027.png)
+![bit-n](https://user-images.githubusercontent.com/61284667/210126046-a6495e5b-42b8-4e66-b9ce-9a9227433fad.png)
+
 
 
 ## If answer is correct
 
-![bit-correct-image](https://user-images.githubusercontent.com/61284667/210055863-1f8fe1a6-440f-45e8-9ded-c64a547e4d54.png)
+![bit-true](https://user-images.githubusercontent.com/61284667/210126051-d4eedad4-67b9-426a-b452-c4420b4fcb6c.png)
 
 
 ## If answer is incorrect 
 
-![bit-incorrect-image](https://user-images.githubusercontent.com/61284667/210055881-9399b5f5-6044-461b-8a20-9c33f764b6b3.png)
+![bit-incc](https://user-images.githubusercontent.com/61284667/210126056-97cf360e-0175-4332-96bd-6eca1764a2b8.png)
