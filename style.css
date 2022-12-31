@@ -1,0 +1,47 @@
+.rightside {
+  background: wheat;
+}
+
+.leftside {
+  background:wheat;
+}
+
+.leftside, .rightside {
+  height: 100vh;
+  width: 100%;
+}
+
+@media screen and (min-width: 760px) {
+  .leftside, .rightside {
+    height: 100vh;
+  }
+}
+
+#container-r {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cell {
+  width: 60px;
+  height: 50px;
+  border: 1px solid #ccc;
+}
+button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 30px;
+  margin-top: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#number1, #number2, #number3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px 0;
+}
