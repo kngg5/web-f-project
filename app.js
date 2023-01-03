@@ -12,46 +12,14 @@ var s = Math.round(secondInt);
 let thirdInt = getRandomNumber(2,5);
 var t =Math.round(thirdInt);
 
-
-   
-
-const refreshButton = document.getElementById('refreshButton');
-const number1 = document.getElementById('number1');
-const number2 = document.getElementById('number2');
-const number3 = document.getElementById('number3');
-
-refreshButton.addEventListener('click', function() {
-    let firstInt = getRandomNumber(3,10);
-    var f = Math.round(firstInt);
-    let secondInt = getRandomNumber(2,6);
-    var s =Math.round(secondInt);
-    let thirdInt = getRandomNumber(2,5);
-    var t = Math.round(thirdInt);
-    location.reload();
-    number1.textContent = f;
-    number2.textContent = s;
-    number3.textContent = t;
-    
-
-});
-
-
-number1.textContent = f;
-number2.textContent = s;
-number3.textContent = t;
-
- 
-
 var numColors = t;
 var colors = d3.scaleOrdinal()
   .range(d3.schemeCategory10.slice(0, numColors));
 
-
-
 var numColumns = f;
 var numRows = s;
 
-const grid = d3.select(".f").append("div")
+const grid = d3.select(".pixels").append("div")
     .attr("class", "grid")
     .style("display", "grid")
     .style("grid-template-columns", `repeat(${numColumns}, 9%)`)
@@ -90,7 +58,7 @@ var numBits = fNum * s;
 console.log(numBits);
 
 const button = d3.select('.l').append("button")
-    .attr("class","checkInpValue")  
+    .attr("id","checkInpValue")  
     .text("Проверить")
     .style("background-color","black")
     .style("color","white")
@@ -105,6 +73,16 @@ const button = d3.select('.l').append("button")
         } else {
             d3.select(".bits").text("Ваш ответ "+xx+" не верный! Верный "+ numBits)
             d3.select('.checkInpValue').style("background-color","red")
+        }
+        setTimeout(refresh,3000);
+        function refresh() {
+            let firstInt = getRandomNumber(3,10);
+            var f = Math.round(firstInt);
+            let secondInt = getRandomNumber(2,6);
+            var s =Math.round(secondInt);
+            let thirdInt = getRandomNumber(2,5);
+            var t = Math.round(thirdInt);
+            location.reload();
         }
     })
 
