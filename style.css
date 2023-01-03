@@ -11,9 +11,24 @@
   width: 100%;
 }
 
+.inpt {
+  font-size: 20px;
+}
+
+
+.pixels {
+  max-width: 150px;
+  margin-right: 80px;
+  margin-top: 0;
+  padding-top: 0;
+}
+
 @media screen and (min-width: 760px) {
   .leftside, .rightside {
     height: 100vh;
+  }
+  .inpt {
+    font-size: 10px;
   }
 }
 
@@ -40,8 +55,7 @@ button {
   border-radius: 10px;
 }
 
-#number1, #number2, #number3 {
-  font-size: 30px;
-  font-weight: bold;
-  margin: 20px 0;
+#checkInpValue {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
