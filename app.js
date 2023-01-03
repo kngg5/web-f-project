@@ -36,7 +36,7 @@ const cells = grid.selectAll(".cell")
 
 const txt = d3.select('.l').append("h3")
       .attr("class","bits")
-      .text("Подсчитайте сколько будет в битах, после нажатия проверки подождите несколько секунд: ")
+      .text("Сколько будет в битах : ")
       .style("margin","10px 100px")
       .style("font-size","30px")
     
